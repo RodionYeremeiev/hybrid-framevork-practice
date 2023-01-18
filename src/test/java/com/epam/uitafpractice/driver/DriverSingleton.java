@@ -7,8 +7,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
-
-    //    private static final String RESOURCES_PATH = "src\\test\\resources\\";
     private static WebDriver driver;
 
     private DriverSingleton() {}
@@ -37,7 +35,4 @@ public class DriverSingleton {
         driver = null;
     }
 
-  /*
-  mvn -Dbrowser=chrome -Dsurefire.suiteXmlFiles=src\test\resources\testng-smoke.xml clean test
-   */
 }

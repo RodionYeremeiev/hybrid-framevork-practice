@@ -23,8 +23,6 @@ public class GCloudSearchTest extends CommonConditions {
             searchItemsList.stream()
                            .anyMatch(element -> element.getText().contains(GOOGLE_CLOUD_PRICING_CALCULATOR_TEXT)),
             "Error! Search for pricingCalculator FAILED !");
-        //
-        // driver.findElement(By.xpath("//*[contains(@data-cturl,'/products/calculator')]")).click();
     }
 
 }
