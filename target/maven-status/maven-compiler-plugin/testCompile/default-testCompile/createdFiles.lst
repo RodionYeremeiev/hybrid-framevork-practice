@@ -1,0 +1,9 @@
+com\epam\uitafpractice\driver\DriverSingleton.class
+com\epam\uitafpractice\page\AbstractPage.class
+com\epam\uitafpractice\test\GCloudSearchTest.class
+com\epam\uitafpractice\page\GooglePricingCalculatorPage.class
+com\epam\uitafpractice\page\GoogleCloudSearchResultsPage.class
+com\epam\uitafpractice\page\GoogleCloudHomePage.class
+com\epam\uitafpractice\test\CommonConditions.class
+com\epam\uitafpractice\test\GCloudPricingCalculatorTest.class
+com\epam\uitafpractice\waits\Waiters.class

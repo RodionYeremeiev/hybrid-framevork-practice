@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchTest" verbose="1" >
+    <test name="Search for Google Cloud Pricing Calculator Test"   >
+        <classes>
+            <class name="com.epam.uitafpractice.test.GCloudSearchTest" />
+        </classes>
+    </test>
+</suite>
