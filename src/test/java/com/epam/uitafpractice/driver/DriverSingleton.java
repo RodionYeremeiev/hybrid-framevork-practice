@@ -11,24 +11,24 @@ public class DriverSingleton {
 
     private DriverSingleton() {}
 
-    public static WebDriver getDriver() {
-        if (null == driver) {
-            switch (System.getProperty("browser")) {
-                case "edge":
-                {
-                    WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
-                }
-                case "chrome":
-                {
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                }
-            }
-            driver.manage().window().maximize();
-        }
-        return driver;
+  public static WebDriver getDriver() {
+    if (null == driver) {
+      switch (System.getProperty("browser")) {
+        case "edge":
+          {
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+          }
+        case "chrome":
+          {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+          }
+      }
+      driver.manage().window().maximize();
     }
+    return driver;
+  }
 
     public static void closeDriver() {
         driver.quit();

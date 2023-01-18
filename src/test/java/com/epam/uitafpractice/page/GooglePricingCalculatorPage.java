@@ -2,6 +2,8 @@ package com.epam.uitafpractice.page;
 
 import com.epam.uitafpractice.waits.Waiters;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -77,6 +79,8 @@ public class GooglePricingCalculatorPage extends AbstractPage {
 
   @FindBy(xpath = "//md-list-item/div")
   private List<WebElement> calculatedEstimatedValues;
+  private final Logger logger = LogManager.getRootLogger();
+
 
   public GooglePricingCalculatorPage(WebDriver driver) {
     super(driver);
@@ -84,6 +88,7 @@ public class GooglePricingCalculatorPage extends AbstractPage {
 
   public GooglePricingCalculatorPage openPage() {
     driver.get(CLOUD_PRICING_CALCULATOR_PAGE);
+    logger.info("Google Cloud Pricing Calculator page is opened");
     return this;
   }
 
